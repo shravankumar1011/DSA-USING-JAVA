@@ -5,18 +5,15 @@
 Write your code in this editor and press "Run" button to execute it.
 
 *******************************************************************************/
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int arr[][] = {{1, 2, 3}, {4, 5, 6}};
-        int sum=0;
-        for(int i=0;i<arr.length;i++){
-            for(int j=0;j<arr[i].length;j++){
-                sum+=arr[i][j];
-                
-            }
-        
+        List<Integer> names = new ArrayList<>();
+        for (int i = 0; i < 10; i++) { 
+            names.add(i + 1);
         }
-        System.out.println(sum);
+        System.out.println(names);
     }
 }
